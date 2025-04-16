@@ -3,3 +3,4 @@ plotly
 pandas
 plost
 altair
+openpyxl
