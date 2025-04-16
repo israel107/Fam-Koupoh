@@ -55,11 +55,11 @@ with st.sidebar:
 
     v_indices = st.selectbox('Indices', sel_indice)
 
-df = pd.read_excel('./Bul_All_2024_VF.xlsx')
+df = pd.read_excel('./Bul_All_2024_VF.xlsx', sheet_name="Feuil1")
 orig_data= df.set_index(['Seance'])  
 orig_data = orig_data.sort_index()  
 
-df_idx = pd.read_excel('./All_indices_2024.xlsx')
+df_idx = pd.read_excel('./All_indices_2024.xlsx', sheet_name="Cours")
 orig_idx= df_idx.set_index(['Séance'])  
 #######################################
 # Analyse Indice
